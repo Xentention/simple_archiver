@@ -1,0 +1,5 @@
+all:
+	gcc src/c_files/main.c src/c_files/archiver.c src/c_files/unarchiver.c -o ttar
+
+sanitized:
+	gcc src/c_files/main.c src/c_files/archiver.c src/c_files/unarchiver.c -o ttar -fsanitize=address
